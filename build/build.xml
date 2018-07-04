@@ -1,0 +1,16 @@
+
+
+<project name="FF-Tab-Closer" default="combine" basedir="../">
+  <description>
+   Kombiniert die Javascriptsdateien in eine Datei
+  </description>
+ 
+  <target name="combine">
+  	<concat destfile="webextension/FF-Tab-Closer-Background.js">
+  	  <fileset file="code/CL_1_Base.js" />
+  	  <fileset file="code/CL_2_Dupplicated.js" />
+  	  <fileset file="code/CL_3_Menu.js" />
+  	</concat>
+  </target>
+
+</project>

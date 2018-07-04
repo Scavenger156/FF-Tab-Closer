@@ -1,0 +1,25 @@
+{
+
+	"manifest_version": 2,
+	"name": "FF-Tab-Closer",
+	"version": "1.0",
+	"default_locale": "de",
+	"description": "Ziel ist es Tabs nach gewissen Regeln zu schließen.",
+	"icons": {"48": "icons/border-48.png"},
+	"permissions": [
+		"<all_urls>",
+		"menus", // Kontextmenü auf dem Tab
+		"activeTab", // Zugriff auf die Information welche URL im aktiven Tab aktiv ist
+		"tabs" // Da wir Tabs schließen wollen
+		],
+	"background": {"scripts": ["FF-Tab-Closer-Background.js"]}, // Hauptskript, welches das Menü erstellt und die Logik enthält
+	"content_scripts": [{
+		"matches": ["<all_urls>"], // Das Skript in alle Tabs einbetten
+		"js": ["FF-Tab-Closer.js"]
+	}],
+	"applications": {
+		"gecko": {
+			"id": "contact@the-creator.eu"
+		}
+	}
+}

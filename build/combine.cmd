@@ -1,0 +1,1 @@
+copy ..\code\CL*.js ..\webextension\FF-Tab-Closer-Background.js

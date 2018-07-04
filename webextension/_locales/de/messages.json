@@ -1,0 +1,26 @@
+{
+  "extensionName": {
+    "message": "FF-Tab-Closer",
+    "description": ""
+  }
+,
+"MI_DUPPLICATED": {
+	    "message": "Doppelte Tabs schließen",
+	    "description": ""
+	  }
+,
+"MI_HOST": {
+	    "message": "Andere Tabs mit dem selben Server schließen",
+	    "description": ""
+	  }
+,
+"MI_TITLE": {
+	    "message": "Tabs mit Titel",
+	    "description": ""
+	  }
+,
+"MI_SOURCE": {
+	    "message": "Tabs mit folgenden Quelltext",
+	    "description": ""
+	  }
+}
