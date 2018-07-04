@@ -1,3 +1,4 @@
+
 /**
  * Tabs anhand des HTMl Quelltextes schließen
  * 
@@ -37,3 +38,4 @@ browser.menus.create({
 	contexts : [ "tab" ]
 }, onCreated);
 registerFunction("mi_by-source", removeBySource);
+

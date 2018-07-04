@@ -1,3 +1,4 @@
+
 /**
  * Doppelte Tabs entfernen
  */
@@ -35,3 +36,4 @@ browser.menus.create({
 }, onCreated);
 
 registerFunction("mi_dupplicated", removeDupplicated);
+

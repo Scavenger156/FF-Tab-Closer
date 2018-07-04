@@ -1,3 +1,4 @@
+
 /**
  * Tabs mit einem Titel den der Benutzer eingibt schließen
  * 
@@ -35,3 +36,4 @@ browser.menus.create({
 }, onCreated);
 
 registerFunction("mi_by-title", removeByTitle);
+

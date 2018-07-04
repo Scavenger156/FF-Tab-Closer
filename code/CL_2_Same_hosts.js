@@ -1,3 +1,4 @@
+
 /**
  * Tabs mit dem Selben Server wie dem Selektierten Tab schließen
  */
@@ -37,3 +38,4 @@ browser.menus.create({
 	contexts : [ "tab" ]
 }, onCreated);
 registerFunction("mi_by-sameHost", removeBySameHost);
+

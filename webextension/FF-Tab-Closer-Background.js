@@ -1,4 +1,8 @@
 
+/**
+ * Basiscode
+ */
+
 function onCreated() {
 	if (browser.runtime.lastError) {
 		console.log("Error: ${browser.runtime.lastError}");
@@ -51,6 +55,8 @@ function callFunction(tab,id){
 function registerFunction(id,toCall){
 	functionMap.set(id, toCall);
 }
+
+
 /**
  * Doppelte Tabs entfernen
  */
@@ -87,7 +93,10 @@ browser.menus.create({
 	contexts : [ "tab" ]
 }, onCreated);
 
-registerFunction("mi_dupplicated", removeDupplicated);/**
+registerFunction("mi_dupplicated", removeDupplicated);
+
+
+/**
  * Tabs mit dem Selben Server wie dem Selektierten Tab schließen
  */
 var getLocation = function(href) {
@@ -125,7 +134,10 @@ browser.menus.create({
 	title : browser.i18n.getMessage("MI_HOST"),
 	contexts : [ "tab" ]
 }, onCreated);
-registerFunction("mi_by-sameHost", removeBySameHost);/**
+registerFunction("mi_by-sameHost", removeBySameHost);
+
+
+/**
  * Tabs anhand des HTMl Quelltextes schließen
  * 
  */
@@ -163,7 +175,10 @@ browser.menus.create({
 	title : browser.i18n.getMessage("MI_SOURCE"),
 	contexts : [ "tab" ]
 }, onCreated);
-registerFunction("mi_by-source", removeBySource);/**
+registerFunction("mi_by-source", removeBySource);
+
+
+/**
  * Tabs mit einem Titel den der Benutzer eingibt schließen
  * 
  */
@@ -200,6 +215,8 @@ browser.menus.create({
 }, onCreated);
 
 registerFunction("mi_by-title", removeByTitle);
+
+
 /**
  * Handling des Klicks auf ein Menüpunkt
  */

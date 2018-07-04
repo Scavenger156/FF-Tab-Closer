@@ -1,4 +1,8 @@
 
+/**
+ * Basiscode
+ */
+
 function onCreated() {
 	if (browser.runtime.lastError) {
 		console.log("Error: ${browser.runtime.lastError}");
@@ -51,3 +55,4 @@ function callFunction(tab,id){
 function registerFunction(id,toCall){
 	functionMap.set(id, toCall);
 }
+
